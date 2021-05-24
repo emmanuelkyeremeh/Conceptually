@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="concept.css" />
+    <title>Concept</title>
+  </head>
+  <body>
+    <iframe
+      class="default-open"
+      id="ic"
+      src="./interactive_canvas/ic.html"
+    ></iframe>
+    <iframe id="vp" src="./video_player/vp.html"></iframe>
+    <iframe id="ce" src="./code_editor/ce.html"></iframe>
+    <div class="screen-switcher-panel">
+      <button class="button active" onclick="openIframe(event, 'ic')">
+        IC
+      </button>
+      <button class="button" onclick="openIframe(event, 'vp')">VP</button>
+      <button class="button" onclick="openIframe(event, 'ce')">CE</button>
+    </div>
+    <script src="concept.js"></script>
+  </body>
+</html>
